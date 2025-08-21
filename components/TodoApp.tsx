@@ -70,7 +70,7 @@ export function TodoApp() {
     <div className="max-w-lg mx-auto bg-white dark:bg-red-900 rounded-lg shadow-lg p-6 border border-red-100 dark:border-red-800">
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-red-800 dark:text-red-100 mb-4">
-          My Planner Om
+          My Planner Om testing
         </h1>
         
         <Tabs defaultValue="todos" className="w-full">
