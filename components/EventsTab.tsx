@@ -13,8 +13,12 @@ interface Event {
   description?: string;
 }
 
-export function EventsTab() {
-  const [events, setEvents] = useState<Event[]>([]);
+interface EventsTabProps {
+  events: Event[];
+  setEvents: (events: Event[]) => void;
+}
+
+export function EventsTab({ events, setEvents }: EventsTabProps) {
   const [titleInput, setTitleInput] = useState('');
   const [dateInput, setDateInput] = useState('');
   const [timeInput, setTimeInput] = useState('');
